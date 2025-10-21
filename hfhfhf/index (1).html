@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<title>EduSpark Dashboard</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Work+Sans:wght@400;500;700;900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#13a4ec",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101c22",
+          },
+          fontFamily: {
+            "display": ["Work Sans"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-200">
+<div class="relative min-h-screen">
+<header class="sticky top-0 z-40 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="container mx-auto px-4">
+<div class="flex items-center justify-between h-16">
+<button class="lg:hidden text-slate-800 dark:text-slate-200">
+<span class="material-symbols-outlined">
+              menu
+            </span>
+</button>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">
+              school
+            </span>
+<h1 class="text-xl font-bold text-slate-900 dark:text-white">EduSpark</h1>
+</div>
+<button class="text-slate-800 dark:text-slate-200">
+<span class="material-symbols-outlined">
+              settings
+            </span>
+</button>
+</div>
+</div>
+</header>
+<aside class="fixed inset-y-0 left-0 z-50 w-72 bg-background-light dark:bg-background-dark transform -translate-x-full lg:hidden transition-transform duration-300 ease-in-out">
+<div class="p-6">
+<div class="flex items-center gap-4 mb-8">
+<div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl">
+              person
+            </span>
+</div>
+<div>
+<p class="font-bold text-slate-900 dark:text-white">Ms. Johnson</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">Educator</p>
+</div>
+</div>
+<nav class="flex flex-col gap-2">
+<a class="flex items-center gap-4 p-3 rounded-lg bg-primary/10 text-primary font-bold" href="#">
+<span class="material-symbols-outlined">home</span>
+<span>Home</span>
+</a>
+<a class="flex items-center gap-4 p-3 rounded-lg hover:bg-primary/10 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">videogame_asset</span>
+<span>My Games</span>
+</a>
+<a class="flex items-center gap-4 p-3 rounded-lg hover:bg-primary/10 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">groups</span>
+<span>My Classes</span>
+</a>
+<a class="flex items-center gap-4 p-3 rounded-lg hover:bg-primary/10 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">library_books</span>
+<span>Game Library</span>
+</a>
+</nav>
+</div>
+</aside>
+<main class="container mx-auto p-4 pb-32">
+<section class="mb-8">
+<h2 class="text-2xl font-bold mb-4 px-4 sm:px-0 text-slate-900 dark:text-white">My Games</h2>
+<div class="flex overflow-x-auto gap-4 pb-4 -mx-4 px-4" style="scrollbar-width: none; -ms-overflow-style: none; &amp;::-webkit-scrollbar { display: none; }">
+<div class="flex-none w-64">
+<div class="bg-white dark:bg-slate-800/50 rounded-xl overflow-hidden shadow-sm">
+<div class="w-full h-36 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDpvCe5KifW-aMA7Ox6A98HGosqIf8V5JLtvChX9NjkZ8MhESN8WyCP5qdQg4n41Frfud9FJLvvNJe6VZWTBfHr0HQ6vmL6ULfbQWUSlpoXAaZoTYWUfMjGFPSEW1WNnCnP6evnD4CmLjtr1eQyBnudNFYClhBS58GpMUNrRW5U7SR4dqX3n0cdlEG-bWcaU8E50Zg1j1Ub62q9RIz81JXFHwKMHXQ0lGij8tnZDB0OJQWm75qDzCzfa_g7o6G159mZzf7Tylefkms");'></div>
+<div class="p-4">
+<h3 class="font-bold text-slate-900 dark:text-white">Math Mania</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400">Last played: 2 days ago</p>
+</div>
+</div>
+</div>
+<div class="flex-none w-64">
+<div class="bg-white dark:bg-slate-800/50 rounded-xl overflow-hidden shadow-sm">
+<div class="w-full h-36 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD74t5AKp0WNQg0yAyag36XV419VEjAgG9MR44UNkNpEXHJfSMANWlW3c0N0U41_lQlKOuEQZibYlKxg7LB6MM5_TQJ486UGDETGGHk_C5Rd3JqHtrqdUNUtC6NO2UfD7OSlKVaDSJh6WHrkLaM7iy90k-tV6nzT6hmtnLOdxeaJvQvej9bndeMhgjL_4PCWalQgu1WVlukhXrEuhnFF62vQm0ERZZgs8kLQY8unmboiBdPmbQxZTS1KyKwvjiCAP8aDf3l502r9ss");'></div>
+<div class="p-4">
+<h3 class="font-bold text-slate-900 dark:text-white">History Quest</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400">Last played: 1 week ago</p>
+</div>
+</div>
+</div>
+<div class="flex-none w-64">
+<div class="bg-white dark:bg-slate-800/50 rounded-xl overflow-hidden shadow-sm">
+<div class="w-full h-36 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDlhx41-nvehHBKXOB6VCstcqT7Ss90RI_w04d7NdBH5jokiwhMqom7aoTDpFcP6peHr98Qb7fF_raQCGoz5vE9DWFhlwbZvPOZ-K_prHeLVTF6k4V4dkETyDvhtS-6pkgHmt-MaBYl9pZSYRwonKvBMS0pxH-wRQ7vblIDiMviFWTBjARd0A4aD-wHdJdXPky30-2qBB0pOK3ZRXRUD_V0UH31i7AEGwlZj2jJNP2pVdvF0o9tLIGIJLqze4FpjZCTOSR8ZB6V7vs");'></div>
+<div class="p-4">
+<h3 class="font-bold text-slate-900 dark:text-white">Science Explorers</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400">Last played: 3 weeks ago</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h2 class="text-2xl font-bold mb-4 px-4 sm:px-0 text-slate-900 dark:text-white">My Classes</h2>
+<div class="space-y-4">
+<div class="bg-white dark:bg-slate-800/50 rounded-xl p-4 flex items-center gap-4 shadow-sm">
+<div class="flex-1">
+<h3 class="font-bold text-lg text-slate-900 dark:text-white">Grade 6 - Science</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400">25 students</p>
+<button class="mt-3 text-sm font-bold text-primary hover:underline">View Details</button>
+</div>
+<div class="w-24 h-24 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAQwulZtJtN5ytb8-K1EqAbpzlL54sXonF7R_41KMqbVed3f08ZOu-BsoXI9_Q1esOmjhxYinj4Nl5bX_wyFuWnXNlPJGr3EhUkwpnG49FTlP-1TCQmOcqJ8biOAxYCCEg-sISX6AJjjTfouWZvsUqoJEfpUvZktN7-O5KaQVtnZ2EbQl0LbPq9YYzjrKEmz6xqjp1fxsDeaeS9-je2IHXJ6VqlYmu0cKetPdcG_CaY1Exg7dQGM-OVfjnIdf_UQJche3qJmPNjGEE");'></div>
+</div>
+<div class="bg-white dark:bg-slate-800/50 rounded-xl p-4 flex items-center gap-4 shadow-sm">
+<div class="flex-1">
+<h3 class="font-bold text-lg text-slate-900 dark:text-white">Grade 7 - Math</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400">22 students</p>
+<button class="mt-3 text-sm font-bold text-primary hover:underline">View Details</button>
+</div>
+<div class="w-24 h-24 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBA_NXR07SaOqCZmw4VAgQDzZ4_n0qQUcrS-GkLr8c2n8L6WC6yaWdvuixSsGFCOQLIOEiyL_OofPV9Ugfy-NwXvrlns_mV5UTVYZOAngrycPdjfWBIwQZrBVC1ZqpT0r9lmrA6bjnvijPGc6qkkRT9twq_ChfLt9DF2xIuEn_dg9XX1T_nvPqBiF4Phg2tYRxGsZB4zECS0kzoYwoGDTivMEaOwRxCeY5Ppqatd9DMY80C58u9MOHm6pwcuQ_ZsT5Oz38TF7H_iWU");'></div>
+</div>
+</div>
+</section>
+</main>
+<div class="fixed bottom-0 left-0 right-0 p-4 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-t border-slate-200 dark:border-slate-800">
+<div class="container mx-auto">
+<div class="flex flex-col gap-3">
+<button class="w-full bg-primary text-white font-bold py-3 px-4 rounded-xl shadow-lg hover:opacity-90 transition-opacity">
+            Create a New Game
+          </button>
+<button class="w-full bg-primary/20 dark:bg-primary/30 text-primary font-bold py-3 px-4 rounded-xl hover:bg-primary/30 dark:hover:bg-primary/40 transition-colors">
+            Manage Classes
+          </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+    // Simple script for mobile drawer toggle
+    const menuButton = document.querySelector('button.lg\\:hidden');
+    const drawer = document.querySelector('aside');
+    menuButton.addEventListener('click', () => {
+      drawer.classList.toggle('-translate-x-full');
+    });
+    // Optional: close drawer when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!drawer.contains(e.target) && !menuButton.contains(e.target) && !drawer.classList.contains('-translate-x-full')) {
+            drawer.classList.add('-translate-x-full');
+        }
+    });
+  </script>
+
+</body></html>
